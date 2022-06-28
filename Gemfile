@@ -8,8 +8,7 @@ gem "sinatra", "~> 2.1"
 # https://guides.rubyonrails.org/active_record_basics.html
 gem "activerecord", "~> 6.1"
 
-gem "pg"
-
+gem 'pg'
 gem 'puma'
 
 # Configures common Rake tasks for working with Active Record
