@@ -6,5 +6,10 @@ ENV['RACK_ENV'] ||= "development"
 require 'bundler/setup'
 Bundler.require(:default, ENV['RACK_ENV'])
 
+configure :production, :development do
+    db = URI.parse(ENV['DATABASE_URL'] || 'postgres://localhost/cars_development')
+    
+end
+
 # Require in all files in 'app' directory
 require_all 'app'

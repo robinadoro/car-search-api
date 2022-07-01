@@ -1,5 +1,5 @@
-#   Ensure the posgresql gem is defined in your Gemfile
-#   gem 'pg'
+  # Ensure the posgresql gem is defined in your Gemfile
+  # gem 'pg'
 
 default: &default
   adapter: postgresql
@@ -17,3 +17,4 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
+
